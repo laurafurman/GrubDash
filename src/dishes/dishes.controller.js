@@ -83,7 +83,6 @@ function update(req, res) {
   const dish = res.locals.dish;
   const { data: { name, description, price, image_url } = {} } = req.body;
 
-  dish.id = dish.id;
   dish.name = name;
   dish.description = description;
   dish.price = price;
